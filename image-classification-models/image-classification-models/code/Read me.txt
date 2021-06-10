@@ -1,0 +1,3 @@
+fromscratch：没有用迁移学习，直接从头开始训练模型
+transfer：用ImageNet预训练模型，后冻结模型的特征提取层，只用malware数据集重训练模型的分类层（top-layer）
+reload-model：重新载入训练好的model，用训练好的model进行预测（需要自己重新写下模型结构，和训练时的模型结构保持一致）
